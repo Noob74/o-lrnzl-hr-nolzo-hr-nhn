@@ -1,3 +1,10 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const prefix = '.'
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`Over Power Shop`,"http://twitch.tv/S-F")
 lient.on("ready", () => {
     var guild;
     while (!guild)
